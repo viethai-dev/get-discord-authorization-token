@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Authorization Header</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(145deg, #e0e7ff, #f9f9f9);
+            margin: 0;
+            padding: 0;
+            width: 340px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #5865F2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header img {
+            width: 24px;
+            height: 24px;
+        }
+
+        main {
+            padding: 15px 20px;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        #authContainer {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #authHeader {
+            word-break: break-word;
+            color: #333;
+            flex: 1;
+            margin-right: 8px;
+        }
+
+        #copyBtn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        #copyBtn:hover {
+            background-color: #0056b3;
+        }
+
+        #note {
+            font-size: 12px;
+            color: #666;
+        }
+
+        #reloadLink {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #reloadLink:hover {
+            text-decoration: underline;
+        }
+
+        #status {
+            text-align: center;
+            font-size: 12px;
+            color: green;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #777;
+        }
+
+        #coffeePopup {
+            text-align: center;
+            display: none;
+        }
+
+        #coffeePopup button {
+            padding: 6px 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #coffeePopup img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="icons/discord-logo.png" alt="Discord Logo" />
+        <strong>Get Discord Authorization Token</strong>
+    </header>
+    <main>
+        <div id="authContainer">
+            <div id="authHeader">Loading...</div>
+            <button id="copyBtn">Copy</button>
+        </div>
+        <div id="status"></div>
+        <div id="note" style="display: none; margin-bottom: 12px;">
+            If the token is not shown, please click:
+            <span id="reloadLink">Profile</span>
+        </div>
+
+        <div id="coffeePopup">
+            <div style="display: flex; justify-content: center;">
+                <img src="icons/discord-logo.png" alt="Buy me a coffee">
+            </div>
+            <button id="closeCoffee">Close</button>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 ❤️ Made by VietHai Developer —
+        <a id="buyCoffeeLink" style="color: #007bff; text-decoration: none; cursor: pointer;">☕ Buy me a coffee</a>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
