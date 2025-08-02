@@ -20,7 +20,7 @@ This Chrome Extension captures and displays your Discord Authorization Token fro
 
 ### 1. Clone or Download the Extension
 
-  - $ git clone https://github.com/your-username/discord-token-extension.git
+  - $ git clone https://github.com/viethai-dev/get-discord-authorization-token.git
 
 Or download the ZIP and extract it.
 
